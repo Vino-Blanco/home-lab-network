@@ -4,6 +4,8 @@
 
 I built a virtual home lab network using a Windows 10 virtual machine and an Ubuntu virtual machine in Oracle VM VirtualBox. The goal was to understand basic networking concepts and establish communication between systems on an internal network.
 
+This was my first networking project and served as the foundation for my larger homelab build — [HomeLab-Server](https://github.com/gavin-michael/HomeLab-Server).
+
 ---
 
 ## Network Configuration
@@ -49,8 +51,8 @@ I built a virtual home lab network using a Windows 10 virtual machine and an Ubu
 
 Successful communication between both systems was confirmed using ICMP (ping):
 
-* Windows → Ubuntu
-* Ubuntu → Windows
+* Windows to Ubuntu
+* Ubuntu to Windows
 
 ---
 
@@ -79,11 +81,6 @@ Successful communication between both systems was confirmed using ICMP (ping):
 
 ---
 
-## Future Improvements
+## What Came Next
 
-* Add Wireshark for packet analysis
-* Simulate network failures and recovery scenarios
-* Expand lab with additional virtual machines
-* Implement basic Active Directory environment
-
----
+This project taught me the fundamentals, but I wanted to go deeper. I moved from VirtualBox to a dedicated server running Proxmox and built a production-style homelab with VLAN segmentation, an OPNsense firewall, and a full monitoring stack. That project is documented here: [HomeLab-Server](https://github.com/gavin-michael/HomeLab-Server).
